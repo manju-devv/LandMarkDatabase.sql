@@ -56,5 +56,36 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="dbo" />
+    <Folder Include="dbo\Tables" />
+    <Folder Include="dbo\StoredProcedures" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\User.sql" />
+    <Build Include="dbo\StoredProcedures\GetUser.sql" />
+    <Build Include="dbo\Tables\MenuBar.sql" />
+    <Build Include="dbo\Tables\HomePage.sql" />
+    <Build Include="dbo\Tables\Features.sql" />
+    <Build Include="dbo\Tables\FeatureTools.sql" />
+    <Build Include="dbo\Tables\Price.sql" />
+    <Build Include="dbo\Tables\PricePlan.sql" />
+    <Build Include="dbo\Tables\PlanFeatures.sql" />
+    <Build Include="dbo\Tables\Testimonials.sql" />
+    <Build Include="dbo\Tables\TestimonialRoles.sql" />
+    <Build Include="dbo\Tables\Footer.sql" />
+    <Build Include="dbo\Tables\FooterDetails.sql" />
+    <Build Include="dbo\Tables\CopyWright.sql" />
+    <Build Include="dbo\StoredProcedures\GetCopyWright.sql" />
+    <Build Include="dbo\StoredProcedures\GetFeatures.sql" />
+    <Build Include="dbo\StoredProcedures\GetFeatureTools.sql" />
+    <Build Include="dbo\StoredProcedures\GetFooter.sql" />
+    <Build Include="dbo\StoredProcedures\GetFooterDetails.sql" />
+    <Build Include="dbo\StoredProcedures\GetHomePage.sql" />
+    <Build Include="dbo\StoredProcedures\GetMenuBar.sql" />
+    <Build Include="dbo\StoredProcedures\GetPlanFeatures.sql" />
+    <Build Include="dbo\StoredProcedures\GetPrice.sql" />
+    <Build Include="dbo\StoredProcedures\GetPricePlan.sql" />
+    <Build Include="dbo\StoredProcedures\GetTestimonialRoles.sql" />
+    <Build Include="dbo\StoredProcedures\GetTestiminials.sql" />
   </ItemGroup>
 </Project>
